@@ -1,0 +1,10 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /localCache
+knife4j:
+    enable: true
+spring:
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
