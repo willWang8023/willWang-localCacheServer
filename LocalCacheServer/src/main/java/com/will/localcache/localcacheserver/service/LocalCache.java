@@ -2,6 +2,7 @@ package com.will.localcache.localcacheserver.service;
 
 import java.util.Date;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author wangwy
@@ -64,6 +65,12 @@ public interface LocalCache {
      * @return
      */
     Object get(String key);
+
+    /**
+     * 获取所有的key值
+     * @return
+     */
+    Set<String> getAllKeys();
 
     /**
      * 查询缓存是否包含key

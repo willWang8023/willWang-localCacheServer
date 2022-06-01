@@ -4,10 +4,7 @@ import com.will.localcache.localcacheserver.service.LocalCache;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
-import java.util.Date;
-import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -154,6 +151,11 @@ public class LocalCacheImpl implements LocalCache, Serializable {
     @Override
     public Object get(String key) {
         return map.get(key);
+    }
+
+    @Override
+    public Set<String> getAllKeys(){
+        return map.keySet();
     }
 
     /**

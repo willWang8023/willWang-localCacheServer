@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.Date;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author willWang
@@ -111,6 +112,17 @@ public class LocaCacheController {
     @GetMapping("/get")
     public RespJson<Object> get(@RequestParam("key") String key) {
         return RespJson.success(localCache.get(key));
+    }
+
+    /**
+     * 获取缓存
+     *
+     * @return
+     */
+    @ApiOperation("获取缓存")
+    @GetMapping("/getAllKeys")
+    public RespJson<Set<String>> getAllKeys() {
+        return RespJson.success(localCache.getAllKeys());
     }
 
     /**
