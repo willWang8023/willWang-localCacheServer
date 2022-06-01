@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.text.MessageFormat;
 
 /**
- * @author chengwq
+ * @author willWang
  */
 public class BusinessException extends RuntimeException implements Serializable {
 

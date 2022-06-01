@@ -7,7 +7,7 @@ package com.will.localcache.localcacheserver.util;
 
 /**
  * 异常码基类
- * @Author liugj
+ * @Author willWang
  */
 public interface ExceptionResolvable {
 

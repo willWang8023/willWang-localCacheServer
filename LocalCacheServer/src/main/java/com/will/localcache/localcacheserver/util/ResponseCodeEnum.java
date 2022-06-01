@@ -1,5 +1,10 @@
 package com.will.localcache.localcacheserver.util;
 
+/**
+ * 使用currenthashmap实现缓存服务
+ * @author willWang
+ * @since 2022/6/1
+ */
 public enum ResponseCodeEnum {
     SUCCESS(0, "操作成功"),
     SYSTEM_TIPS(1, "系统提示"),
